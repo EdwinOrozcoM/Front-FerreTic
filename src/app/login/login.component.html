@@ -1,0 +1,12 @@
+<p-card  header="FerreTIC LOGIN"  [style]="{'text-align':'center','background':'rgb(18,222,200)' }">
+  <form [formGroup]="form_login" style="text-align: center">
+    <div style="padding:14px">
+      <input pInputText formControlName="username" type="text" placeholder="Nombre de usuario">
+    </div>
+    <div style="padding: 14px">
+      <input pInputText  formControlName="password" type="password"   placeholder="Contraseña">
+    </div>
+    <button pButton (click)="login()" label="Login"></button>
+  </form>
+</p-card>
+
